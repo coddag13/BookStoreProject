@@ -11,31 +11,46 @@ namespace BackendSF.Controllers
     [Route("purchase")]
     public class PurchaseController : ControllerBase
     {
+        
         [HttpPost]
         public async Task<IActionResult> CreatePurchase([FromBody] PurchaseRequestDto request)
         {
-            if (request == null)
+            try
             {
-                return BadRequest("Zahtjev nije poslan.");
+                if (request == null)
+                {
+                    return BadRequest("Zahtjev nije poslan.");
+                }
+
+                var validatorProxy = ServiceProxy.Create<IValidatorService>(
+                    new Uri("fabric:/BookStoreBackend/Validator")
+                );
+
+                var validationResult = await validatorProxy.ValidatePurchaseAsync(request);
+
+                if (!validationResult.IsValid)
+                {
+                    return BadRequest(validationResult);
+                }
+
+                return Ok(new
+                {
+                    Message = "Kupovina je validirana i zahtjev je uspješno primljen.",
+                    Validation = validationResult,
+                    Request = request
+                });
             }
-
-            var validatorProxy = ServiceProxy.Create<IValidatorService>(
-                new Uri("fabric:/BookStoreBackend/Validator")
-            );
-
-            var validationResult = await validatorProxy.ValidatePurchaseAsync(request);
-
-            if (!validationResult.IsValid)
+            catch (Exception ex)
             {
-                return BadRequest(validationResult);
+                return StatusCode(500, new
+                {
+                    Message = "Greška u backendu.",
+                    Error = ex.Message,
+                    InnerError = ex.InnerException?.Message,
+                    StackTrace = ex.StackTrace
+                });
             }
-
-            return Ok(new
-            {
-                Message = "Kupovina je validirana i zahtjev je uspješno primljen.",
-                Validation = validationResult,
-                Request = request
-            });
         }
+
     }
 }

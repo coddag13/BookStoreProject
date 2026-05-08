@@ -735,6 +735,7 @@ E:\BookStoreProject\Backend\BackendSF\obj\Debug\net8.0\win-x64\BackendSF.Assembl
 E:\BookStoreProject\Backend\BackendSF\obj\Debug\net8.0\win-x64\BackendSF.csproj.CoreCompileInputs.cache
 E:\BookStoreProject\Backend\BackendSF\obj\Debug\net8.0\win-x64\BackendSF.MvcApplicationPartsAssemblyInfo.cs
 E:\BookStoreProject\Backend\BackendSF\obj\Debug\net8.0\win-x64\BackendSF.MvcApplicationPartsAssemblyInfo.cache
+E:\BookStoreProject\Backend\BackendSF\obj\Debug\net8.0\win-x64\BackendSF.sourcelink.json
 E:\BookStoreProject\Backend\BackendSF\obj\Debug\net8.0\win-x64\rjimswa.dswa.cache.json
 E:\BookStoreProject\Backend\BackendSF\obj\Debug\net8.0\win-x64\rjsmrazor.dswa.cache.json
 E:\BookStoreProject\Backend\BackendSF\obj\Debug\net8.0\win-x64\rjsmcshtml.dswa.cache.json

@@ -18,6 +18,7 @@ E:\BookStoreProject\Backend\BookStoreShared\obj\Debug\net8.0\BookStoreShared.Gen
 E:\BookStoreProject\Backend\BookStoreShared\obj\Debug\net8.0\BookStoreShared.AssemblyInfoInputs.cache
 E:\BookStoreProject\Backend\BookStoreShared\obj\Debug\net8.0\BookStoreShared.AssemblyInfo.cs
 E:\BookStoreProject\Backend\BookStoreShared\obj\Debug\net8.0\BookStoreShared.csproj.CoreCompileInputs.cache
+E:\BookStoreProject\Backend\BookStoreShared\obj\Debug\net8.0\BookStoreShared.sourcelink.json
 E:\BookStoreProject\Backend\BookStoreShared\obj\Debug\net8.0\BookStoreShared.dll
 E:\BookStoreProject\Backend\BookStoreShared\obj\Debug\net8.0\refint\BookStoreShared.dll
 E:\BookStoreProject\Backend\BookStoreShared\obj\Debug\net8.0\BookStoreShared.pdb

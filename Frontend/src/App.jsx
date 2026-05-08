@@ -65,6 +65,8 @@ function App() {
       })
 
       const result = await response.json()
+      console.log('Backend response:', result)
+
 
       if (!response.ok) {
         setSuccessMessage('')
@@ -85,8 +87,9 @@ function App() {
       })
     } catch (error) {
       setSuccessMessage('')
-      setErrorMessage('Backend trenutno nije dostupan.')
+      setErrorMessage(`Greška pri komunikaciji sa backendom: ${error.message}`)
     }
+
   }
 
   const isFormValid =

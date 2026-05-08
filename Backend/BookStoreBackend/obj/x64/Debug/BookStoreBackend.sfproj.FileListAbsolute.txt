@@ -1,0 +1,2 @@
+E:\BookStoreBackend\BookStoreBackend\obj\x64\Debug\BookStoreBackend.sfproj.CoreCompileInputs.cache
+E:\BookStoreProject\Backend\BookStoreBackend\obj\x64\Debug\BookStoreBackend.sfproj.CoreCompileInputs.cache
